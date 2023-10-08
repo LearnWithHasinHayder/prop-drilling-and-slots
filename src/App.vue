@@ -19,7 +19,9 @@ import Button from './components/Button.vue';
     <div class="mt-10">
       <label >Components</label><br />
       <p class="mt-5">
-        <Button label="Button 1"  />
+        <Button>
+           Dont Click Me
+        </Button>
       </p>
     </div>
   </div>
