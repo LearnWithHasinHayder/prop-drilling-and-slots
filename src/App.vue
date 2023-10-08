@@ -1,11 +1,8 @@
 <script setup>
 import { ref, reactive } from 'vue';
 import ComponentA from './components/ComponentA.vue';
+import { course } from './data/course.js';
 
-const course = reactive({
-  name: 'Vue 3',
-  price: 299,
-});
 </script>
 
 <template>
@@ -16,12 +13,13 @@ const course = reactive({
     </div>
 
     <div class="mt-10">
+      Course name: {{ course.name  }}
     </div>
 
     <div class="mt-10">
       <label >Components</label><br />
       <p class="mt-5">
-        <ComponentA :course="course" />
+        <ComponentA />
       </p>
     </div>
   </div>

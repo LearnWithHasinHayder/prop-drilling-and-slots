@@ -1,4 +1,5 @@
 <script setup>
+import {course} from '../data/course.js'
 const props = defineProps(['course'])
 
 </script>
