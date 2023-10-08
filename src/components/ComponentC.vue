@@ -1,6 +1,7 @@
 <script setup>
-const props = defineProps(['course'])
-
+import {inject} from 'vue';
+const course = inject('course')
+const stock = inject('course-stock')
 </script>
  
 <template>
@@ -9,6 +10,9 @@ const props = defineProps(['course'])
     </p>
     <p class="ml-10">
         <input type="text" v-model="course.name" />
+    </p>
+    <p class="ml-10">
+        Course Stock : {{ stock }}
     </p>
 </template>
  

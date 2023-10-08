@@ -1,11 +1,13 @@
 <script setup>
-import { ref, reactive } from 'vue';
+import { ref, reactive, provide } from 'vue';
 import ComponentA from './components/ComponentA.vue';
 
 const course = reactive({
   name: 'Vue 3',
   price: 299,
 });
+
+provide('course', course);
 </script>
 
 <template>
@@ -21,7 +23,7 @@ const course = reactive({
     <div class="mt-10">
       <label >Components</label><br />
       <p class="mt-5">
-        <ComponentA :course="course" />
+        <ComponentA  />
       </p>
     </div>
   </div>
