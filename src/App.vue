@@ -1,8 +1,6 @@
 <script setup>
 import { ref, reactive } from 'vue';
-import ComponentA from './components/ComponentA.vue';
-import { course } from './data/course.js';
-
+import Button from './components/Button.vue';
 </script>
 
 <template>
@@ -13,13 +11,15 @@ import { course } from './data/course.js';
     </div>
 
     <div class="mt-10">
-      Course name: {{ course.name  }}
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, nostrum accusantium earum tempora dolorem ad voluptatibus nemo dolorum totam delectus.
+      </p>
     </div>
 
     <div class="mt-10">
       <label >Components</label><br />
       <p class="mt-5">
-        <ComponentA />
+        <Button label="Button 1"  />
       </p>
     </div>
   </div>
