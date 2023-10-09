@@ -21,7 +21,7 @@ import Button from './components/Button.vue';
       <p class="mt-5">
         <Button>
           
-          <template v-slot:licon>
+          <template #licon>
             <svg height="20" viewBox="0 0 128 128" width="20" xmlns="http://www.w3.org/2000/svg" id="fi_4208490">
             <g>
               <circle cx="64.001" cy="63.999" fill="#f24646" r="45"></circle>
@@ -29,8 +29,9 @@ import Button from './components/Button.vue';
             </g>
           </svg>
           </template>
-          Dont Click Me
-          <template v-slot:ricon>
+          <template #default>Dont Click Me</template>
+
+          <template #ricon>
             <svg height="20" viewBox="0 0 128 128" width="20" xmlns="http://www.w3.org/2000/svg" id="fi_4208490">
             <g>
               <circle cx="64.001" cy="63.999" fill="#f24646" r="45"></circle>
